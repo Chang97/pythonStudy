@@ -12,16 +12,12 @@ elif varExpense > 2100000000 :
 	exit()	
 elif ltPrice > 2100000000 :	
     exit()
-if varExpense > ltPrice :
+if varExpense >= ltPrice :
     print('-1')
-    exit()
+    exit()    
 
-while True :
-    benefit = (ltPrice * cnt) - (varExpense * cnt) - fixExpense
-    if benefit > 0 :
-        break
-    cnt += 1
-print(cnt)
+benefit = int(fixExpense / (ltPrice - varExpense) + 1)
+print(benefit)
     
 		
 	

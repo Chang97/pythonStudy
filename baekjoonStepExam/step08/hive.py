@@ -7,6 +7,11 @@ cnt = 0
 if num <= 0 and num >= 1000000000 :
     exit()
 
+if num == 1 :
+    print(1)
+    exit()
+
+
 while True :
     room += 6 * loopCnt
     if loopCnt - 1 != 0 :
